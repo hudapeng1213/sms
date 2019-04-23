@@ -6,7 +6,7 @@ public class ShopCart implements Serializable{
 	private String sname;
 	private int scount;
 	private double sprice;
-	public ShopCart(String sname, int scount , double sprice) {
+	public ShopCart(String sname ,int scount, double sprice) {
 		super();
 		this.sname = sname;
 		this.scount = scount;

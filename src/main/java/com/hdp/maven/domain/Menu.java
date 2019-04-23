@@ -40,10 +40,9 @@ public class Menu implements Serializable{
 	public void setType(int type) {
 		this.type = type;
 	}
+	
 	@Override
 	public String toString() {
 		return mid + "\t\t" + mname + "\t\t" + price;
 	}
-	
-	
 }

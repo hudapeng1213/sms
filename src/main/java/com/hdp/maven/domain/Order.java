@@ -5,7 +5,6 @@ import java.sql.Date;
 
 public class Order implements Serializable{
 	private int oid;
-	private int uuid;
 	private int eid;
 	private int vid;
 	private Date time;

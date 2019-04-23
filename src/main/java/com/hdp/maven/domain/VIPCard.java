@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class VIPCard implements Serializable{
 	private int vid;
 	private String name;
-	private String  vphone;
+	private String vphone;
 	private double money;
 	private double discount;
 	private int state;
@@ -38,8 +38,8 @@ public class VIPCard implements Serializable{
 	public String getVphone() {
 		return vphone;
 	}
-	public void setVphone(String vphone) {
-		this.vphone = vphone;
+	public void setVphone(String string) {
+		this.vphone = string;
 	}
 	public double getMoney() {
 		return money;
@@ -65,6 +65,10 @@ public class VIPCard implements Serializable{
 	public void setType(int type) {
 		this.type = type;
 	}
-	
+	@Override
+	public String toString() {
+		return vid + "\t" + name + "\t" + vphone + "\t" + money + "\t"
+				+ discount + "\t" + state + "\t" + type;
+	}
 	
 }
